@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #fafbfc;
+    color: #222;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+header {
+    width: 100%;
+    padding: 1.2rem 0 0.5rem 0;
+    background: none;
+}
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    min-height: 70px;
+}
+.logo-link {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+}
+.logo {
+    height: 56px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+.night-btn {
+    background: none;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    padding: 0.3rem 0.7rem;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    color: inherit;
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    z-index: 2;
+}
+.night-icon {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+.night-icon-svg {
+    color: #1d1d1b;
+    transition: color 0.2s;
+}
+.night .night-icon-svg {
+    color: #fff;
+}
+.annales {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 2rem 3rem;
+    min-width: 260px;
+    text-align: center;
+}
+.annales h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.annales ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.annales li {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eee;
+    min-width: 120px;
+    width: 100%;
+    text-align: center;
+}
+.annales li:last-child {
+    border-bottom: none;
+}
+.night {
+    background: #181a1b;
+    color: #e2e2e2;
+}
+.night .annales {
+    background: #232526;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.night .annales h1 {
+    color: #fff;
+}
+.night .annales li {
+    border-bottom: 1px solid #333;
+}
+.night .night-btn {
+    border-color: #666;
+    color: #e2e2e2;
+}
+.night-btn:hover {
+    background: #f0f0f0;
+}
+.night .night-btn:hover {
+    background: #232526;
+}
