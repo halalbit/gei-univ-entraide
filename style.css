@@ -121,6 +121,12 @@ header {
 .night .annales li {
     border-bottom: 1px solid #333;
 }
+.night .annales a {
+    color: #fff;
+}
+.night .annales a:hover {
+    color: #ffd700;
+}
 .night .night-btn {
     border-color: #666;
     color: #e2e2e2;
